@@ -26,9 +26,4 @@ The dashboard provides:
 - There is a significant gender disparity in billionaire representation.
 - Net worth is highly skewed — top 1% hold disproportionate wealth.
 
-## 🧮 Sample DAX Measures
 
-DAX
-Total Billionaires = DISTINCTCOUNT('Billionaires'[Name])
-Average Net Worth = AVERAGE('Billionaires'[Net Worth])
-Top Country = CALCULATE(MAX('Billionaires'[Country]), TOPN(1, VALUES('Billionaires'[Country]), [Net Worth], DESC))
